@@ -64,11 +64,13 @@ const FilesUploadComponent=()=> {
       <br />
       <div className="container">
         <form onSubmit={onSubmit}>
-          <div className="form-group">
-            <input type="file" onChange={onFileChange} />
-          </div>
-          <div className="form-group">
-            <button className="btn btn-primary" type="submit">
+          <div className="input-group mb-3">
+            <input
+              type="file"
+              className="form-control"
+              onChange={onFileChange}
+            />
+            <button className="btn btn-outline-secondary" type="submit">
               Upload
               <svg
                 xmlns="http://www.w3.org/2000/svg"
